@@ -57,9 +57,6 @@ Frontend Developer & Full Stack Engineer
 ## Experience
 Currently working as a Senior Full Stack Developer, focusing on building accessible, performant, and scalable web applications. Experienced in leading development teams and implementing best practices for modern web development.
 
-## Education
-Bachelor of Informations Technology, Aalborg Universitet
-
 ## Contact
 Email: mail@danielprior.dk
 GitHub: github.com/daprior
