@@ -10,7 +10,7 @@ A stunning, interactive macOS-inspired portfolio website built with Next.js and 
 
 ## 👨‍💻 Demo
 
-![Demo Showcase][http://danielprior.dev](http://danielprior.dev)
+Demo Link: [http://danielprior.dev](http://danielprior.dev)
 
 ### ✨ Features
 
@@ -72,7 +72,6 @@ Edit the following files to customize your portfolio:
 
 - `components/apps/notes.tsx` - Your bio and personal information
 - `components/apps/terminal.tsx` - Custom terminal commands and responses
-
 
 ### Social Links
 
