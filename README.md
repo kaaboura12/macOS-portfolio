@@ -8,14 +8,18 @@ A stunning, interactive macOS-inspired portfolio website built with Next.js and 
 
 ![macOS Portfolio Demo](public/macos-portfolio-demo.png)
 
-## ✨ Features
+## 👨‍💻 Demo
+
+![Demo Showcase][http://danielprior.dev](http://danielprior.dev)
+
+### ✨ Features
 
 - 🖥️ Realistic macOS interface with dark/light mode
 - 🚀 Interactive desktop experience with working windows
 - 🔍 Spotlight search functionality
 - 🧩 Multiple apps to showcase your skills and projects:
-  - Safari (for web browsing)
-  - Notes (for bio/resume)
+  - Safari (For browsing)
+  - Notes (for bio/resume/about)
   - Terminal (interactive command line)
   - VSCode (code samples)
   - Mail (contact link)
@@ -23,25 +27,30 @@ A stunning, interactive macOS-inspired portfolio website built with Next.js and 
   - Spotify (music player)
   - YouTube (video channel)
   - FaceTime (video chat demo)
+  - Snake (just for fun)
+  - Weather (mock data)
 - 🎛️ Working Control Center with brightness and volume controls
 - 🔄 Boot, login, sleep, and shutdown sequences
-- 📱 Fully responsive design
+- 📱 Almost fully responsive design
 - ⚡ Fast and optimized performance
 
-## 🚀 Getting Started
+#### 🚀 Getting Started
 
-### Prerequisites
+##### Prerequisites
 
 - Node.js 16.x or higher
 - npm or yarn
 
-### Installation
+##### Installation
 
 1. Clone the repository:
 
 ```bash
 git clone https://github.com/yourusername/macos-portfolio.git
 cd macos-portfolio
+
+2. Install 
+
 npm install
 # or
 yarn install
@@ -52,8 +61,8 @@ npm run dev
 # or
 yarn dev
 
+```
 4. Open [http://localhost:3000](http://localhost:3000) in your browser to see the result.
-
 
 ## 🎨 Customization
 
