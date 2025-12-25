@@ -41,58 +41,157 @@ export default function Skills({ isDarkMode = true }: SkillsProps) {
       id: "frontend",
       name: "Frontend",
       icon: <Code className="w-5 h-5" />,
-      color: isDarkMode ? "#3B82F6" : "#2563EB",
+      color: isDarkMode ? "#3B82F6" : "#2563EB", // Blue
       skills: [
         { name: "React/Next.js", level: 95, category: "frontend" },
-        { name: "Vue.js/Nuxt.js", level: 90, category: "frontend" },
         { name: "TypeScript/JavaScript", level: 95, category: "frontend" },
-        { name: "Tailwind CSS/SCSS", level: 92, category: "frontend" },
+        { name: "Tailwind CSS", level: 92, category: "frontend" },
+        { name: "HTML/CSS", level: 95, category: "frontend" },
+        { name: "Vite", level: 90, category: "frontend" },
         { name: "UI/UX Design", level: 88, category: "frontend" },
         { name: "Responsive Web Dev", level: 95, category: "frontend" },
-        { name: "Vite/Webpack", level: 85, category: "frontend" },
-        { name: "WordPress/Umbraco", level: 80, category: "frontend" },
+        { name: "shadcn/ui", level: 85, category: "frontend" },
+        { name: "Framer Motion", level: 80, category: "frontend" },
+        { name: "Recharts", level: 75, category: "frontend" },
+        { name: "face-api.js", level: 75, category: "frontend" },
+        { name: "AJAX", level: 88, category: "frontend" },
       ],
     },
     {
       id: "backend",
       name: "Backend",
       icon: <Server className="w-5 h-5" />,
-      color: isDarkMode ? "#10B981" : "#059669",
+      color: isDarkMode ? "#3B82F6" : "#2563EB", // Blue
       skills: [
         { name: "Node.js/Express", level: 90, category: "backend" },
-        { name: "PHP/Laravel/Slim", level: 88, category: "backend" },
-        { name: "Python/Django", level: 85, category: "backend" },
-        { name: "Rust & Go", level: 60, category: "backend" },
-        { name: "SQL (MySQL, PostgreSQL)", level: 90, category: "backend" },
-        { name: "NoSQL (MongoDB)", level: 85, category: "backend" },
-        { name: "RESTful APIs/GraphQL", level: 92, category: "backend" },
+        { name: "NestJS", level: 88, category: "backend" },
+        { name: "PHP", level: 88, category: "backend" },
+        { name: "Symfony 6", level: 85, category: "backend" },
+        { name: "Python", level: 85, category: "backend" },
+        { name: "Java", level: 85, category: "backend" },
+        { name: "RESTful APIs", level: 92, category: "backend" },
+        { name: "WebSocket/Socket.IO", level: 88, category: "backend" },
+        { name: "JWT Authentication", level: 90, category: "backend" },
+        { name: "Passport.js", level: 85, category: "backend" },
+        { name: "Swagger", level: 80, category: "backend" },
+        { name: "Doctrine ORM", level: 80, category: "backend" },
+        { name: "JDBC", level: 80, category: "backend" },
       ],
     },
     {
-      id: "gamedev",
-      name: "Game Development",
+      id: "mobile",
+      name: "Mobile Development",
       icon: <Gamepad2 className="w-5 h-5" />,
-      color: isDarkMode ? "#8B5CF6" : "#7C3AED",
+      color: isDarkMode ? "#3B82F6" : "#2563EB", // Blue
       skills: [
-        { name: "Unity/Unreal Engine", level: 85, category: "gamedev" },
-        { name: "C# & C++", level: 80, category: "gamedev" },
-        { name: "Game Design", level: 75, category: "gamedev" },
-        { name: "Blender 3D", level: 70, category: "gamedev" },
-        { name: "Godot Engine", level: 75, category: "gamedev" },
+        { name: "Flutter", level: 90, category: "mobile" },
+        { name: "Flutterflow", level: 80, category: "mobile" },
+        { name: "Swift", level: 88, category: "mobile" },
+        { name: "SwiftUI", level: 88, category: "mobile" },
+        { name: "iOS Development", level: 85, category: "mobile" },
+        { name: "Kotlin", level: 85, category: "mobile" },
+        { name: "Android Studio", level: 85, category: "mobile" },
+        { name: "Jetpack Compose", level: 80, category: "mobile" },
+        { name: "Material Design", level: 85, category: "mobile" },
+        { name: "CoreLocation/MapKit", level: 80, category: "mobile" },
+        { name: "Google Maps SDK", level: 80, category: "mobile" },
+        { name: "Core Data", level: 75, category: "mobile" },
+        { name: "Room Database", level: 75, category: "mobile" },
+        { name: "Coroutines", level: 80, category: "mobile" },
+        { name: "Retrofit", level: 80, category: "mobile" },
+      ],
+    },
+    {
+      id: "database",
+      name: "Database",
+      icon: <Server className="w-5 h-5" />,
+      color: isDarkMode ? "#3B82F6" : "#2563EB", // Blue
+      skills: [
+        { name: "MySQL", level: 90, category: "database" },
+        { name: "PostgreSQL", level: 85, category: "database" },
+        { name: "MongoDB", level: 88, category: "database" },
+        { name: "Mongoose", level: 85, category: "database" },
+        { name: "Oracle Database", level: 80, category: "database" },
+        { name: "SQL", level: 90, category: "database" },
+        { name: "PL/SQL", level: 75, category: "database" },
+        { name: "Supabase", level: 80, category: "database" },
       ],
     },
     {
       id: "devops",
       name: "DevOps & Tools",
       icon: <Settings className="w-5 h-5" />,
-      color: isDarkMode ? "#F59E0B" : "#D97706",
+      color: isDarkMode ? "#3B82F6" : "#2563EB", // Blue
       skills: [
-        { name: "Docker/Containerization", level: 85, category: "devops" },
+        { name: "Docker", level: 85, category: "devops" },
+        { name: "Kubernetes", level: 75, category: "devops" },
+        { name: "Jenkins", level: 75, category: "devops" },
         { name: "CI/CD Pipelines", level: 80, category: "devops" },
         { name: "Git/GitHub", level: 95, category: "devops" },
         { name: "Agile/Scrum", level: 88, category: "devops" },
-        { name: "AWS/Cloud Services", level: 75, category: "devops" },
         { name: "Linux/Unix", level: 85, category: "devops" },
+        { name: "Vercel", level: 85, category: "devops" },
+        { name: "XAMPP", level: 80, category: "devops" },
+        { name: "Project Management", level: 85, category: "devops" },
+        { name: "Teamwork", level: 90, category: "devops" },
+      ],
+    },
+    {
+      id: "desktop",
+      name: "Desktop & Embedded",
+      icon: <Settings className="w-5 h-5" />,
+      color: isDarkMode ? "#3B82F6" : "#2563EB", // Blue
+      skills: [
+        { name: "C++", level: 85, category: "desktop" },
+        { name: "C", level: 80, category: "desktop" },
+        { name: "Qt Creator", level: 85, category: "desktop" },
+        { name: "Qt Designer", level: 80, category: "desktop" },
+        { name: "JavaFX", level: 85, category: "desktop" },
+        { name: "Arduino", level: 80, category: "desktop" },
+        { name: "RFID", level: 75, category: "desktop" },
+        { name: "SDL", level: 70, category: "desktop" },
+      ],
+    },
+    {
+      id: "services",
+      name: "Services & APIs",
+      icon: <Zap className="w-5 h-5" />,
+      color: isDarkMode ? "#3B82F6" : "#2563EB", // Blue
+      skills: [
+        { name: "Firebase", level: 85, category: "services" },
+        { name: "Cloudinary", level: 80, category: "services" },
+        { name: "Twilio", level: 75, category: "services" },
+        { name: "Nodemailer", level: 80, category: "services" },
+        { name: "WebRTC", level: 75, category: "services" },
+        { name: "Real-time Communication", level: 88, category: "services" },
+        { name: "APIs Integration", level: 90, category: "services" },
+      ],
+    },
+    {
+      id: "ai",
+      name: "AI & Machine Learning",
+      icon: <Sparkles className="w-5 h-5" />,
+      color: isDarkMode ? "#3B82F6" : "#2563EB", // Blue
+      skills: [
+        { name: "Google Gemini AI", level: 85, category: "ai" },
+        { name: "Groq Llama 3.3", level: 80, category: "ai" },
+        { name: "Google Generative AI", level: 80, category: "ai" },
+        { name: "Machine Learning", level: 75, category: "ai" },
+        { name: "AI Integration", level: 85, category: "ai" },
+      ],
+    },
+    {
+      id: "other",
+      name: "Other Skills",
+      icon: <TrendingUp className="w-5 h-5" />,
+      color: isDarkMode ? "#3B82F6" : "#2563EB", // Blue
+      skills: [
+        { name: "Object-Oriented Programming", level: 90, category: "other" },
+        { name: "UML", level: 80, category: "other" },
+        { name: "After Effects", level: 70, category: "other" },
+        { name: "bcrypt", level: 85, category: "other" },
+        { name: "class-validator", level: 80, category: "other" },
+        { name: "class-transformer", level: 80, category: "other" },
       ],
     },
   ]
@@ -119,17 +218,8 @@ export default function Skills({ isDarkMode = true }: SkillsProps) {
     ? allSkills 
     : skillCategories.find((cat) => cat.id === selectedCategory)?.skills || []
 
-  const getLevelColor = (level: number, categoryColor: string) => {
-    if (level >= 90) return isDarkMode ? "#10B981" : "#059669" // Green
-    if (level >= 75) return categoryColor
-    return isDarkMode ? "#F59E0B" : "#D97706" // Orange
-  }
-
-  const getLevelLabel = (level: number) => {
-    if (level >= 90) return "Expert"
-    if (level >= 75) return "Advanced"
-    if (level >= 60) return "Intermediate"
-    return "Learning"
+  const getLevelColor = (categoryColor: string) => {
+    return categoryColor
   }
 
   return (
@@ -229,12 +319,6 @@ export default function Skills({ isDarkMode = true }: SkillsProps) {
                       <div className="flex items-center gap-3 mb-4">
                         <div style={{ color: category.color }}>{category.icon}</div>
                         <h3 className="text-lg font-semibold">{category.name}</h3>
-                        <div className="ml-auto flex items-center gap-2">
-                          <TrendingUp className={`w-4 h-4 ${isDarkMode ? "text-gray-400" : "text-gray-500"}`} />
-                          <span className={`text-sm font-medium ${isDarkMode ? "text-gray-300" : "text-gray-700"}`}>
-                            {avgLevel}%
-                          </span>
-                        </div>
                       </div>
                       <div className="space-y-3">
                         {category.skills.slice(0, 3).map((skill) => {
@@ -245,16 +329,13 @@ export default function Skills({ isDarkMode = true }: SkillsProps) {
                                 <span className={`text-sm ${isDarkMode ? "text-gray-300" : "text-gray-700"}`}>
                                   {skill.name}
                                 </span>
-                                <span className={`text-xs font-medium ${isDarkMode ? "text-gray-400" : "text-gray-500"}`}>
-                                  {animatedLevel}%
-                                </span>
                               </div>
                               <div className={`h-2 rounded-full ${isDarkMode ? "bg-gray-700" : "bg-gray-200"}`}>
                                 <div
                                   className="h-2 rounded-full transition-all duration-1000 ease-out"
                                   style={{
                                     width: `${animatedLevel}%`,
-                                    backgroundColor: getLevelColor(skill.level, category.color),
+                                    backgroundColor: getLevelColor(category.color),
                                   }}
                                 />
                               </div>
@@ -275,12 +356,12 @@ export default function Skills({ isDarkMode = true }: SkillsProps) {
               {/* Stats Summary */}
               <div className={`${cardBg} ${borderColor} border rounded-lg p-6`}>
                 <h3 className="text-lg font-semibold mb-4 flex items-center gap-2">
-                  <Zap className="w-5 h-5" style={{ color: skillCategories[0].color }} />
+                  <Zap className={`w-5 h-5 ${isDarkMode ? "text-gray-400" : "text-gray-500"}`} />
                   Summary Statistics
                 </h3>
-                <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
                   <div>
-                    <div className={`text-2xl font-bold mb-1 ${isDarkMode ? "text-blue-400" : "text-blue-600"}`}>
+                    <div className={`text-2xl font-bold mb-1 ${isDarkMode ? "text-gray-300" : "text-gray-700"}`}>
                       {allSkills.length}
                     </div>
                     <div className={`text-xs ${isDarkMode ? "text-gray-400" : "text-gray-600"}`}>
@@ -288,27 +369,19 @@ export default function Skills({ isDarkMode = true }: SkillsProps) {
                     </div>
                   </div>
                   <div>
-                    <div className={`text-2xl font-bold mb-1 ${isDarkMode ? "text-green-400" : "text-green-600"}`}>
-                      {Math.round(allSkills.reduce((sum, s) => sum + s.level, 0) / allSkills.length)}%
-                    </div>
-                    <div className={`text-xs ${isDarkMode ? "text-gray-400" : "text-gray-600"}`}>
-                      Average Level
-                    </div>
-                  </div>
-                  <div>
-                    <div className={`text-2xl font-bold mb-1 ${isDarkMode ? "text-purple-400" : "text-purple-600"}`}>
-                      {allSkills.filter((s) => s.level >= 90).length}
-                    </div>
-                    <div className={`text-xs ${isDarkMode ? "text-gray-400" : "text-gray-600"}`}>
-                      Expert Level
-                    </div>
-                  </div>
-                  <div>
-                    <div className={`text-2xl font-bold mb-1 ${isDarkMode ? "text-orange-400" : "text-orange-600"}`}>
+                    <div className={`text-2xl font-bold mb-1 ${isDarkMode ? "text-gray-300" : "text-gray-700"}`}>
                       {skillCategories.length}
                     </div>
                     <div className={`text-xs ${isDarkMode ? "text-gray-400" : "text-gray-600"}`}>
                       Categories
+                    </div>
+                  </div>
+                  <div>
+                    <div className={`text-2xl font-bold mb-1 ${isDarkMode ? "text-gray-300" : "text-gray-700"}`}>
+                      {allSkills.filter((s) => s.level >= 90).length}
+                    </div>
+                    <div className={`text-xs ${isDarkMode ? "text-gray-400" : "text-gray-600"}`}>
+                      Expert Level
                     </div>
                   </div>
                 </div>
@@ -321,7 +394,7 @@ export default function Skills({ isDarkMode = true }: SkillsProps) {
                 {displayedSkills.map((skill) => {
                   const category = skillCategories.find((cat) => cat.id === skill.category)
                   const animatedLevel = animatedLevels[skill.name] || 0
-                  const levelColor = getLevelColor(skill.level, category?.color || "#3B82F6")
+                  const levelColor = getLevelColor(category?.color || "#3B82F6")
                   
                   return (
                     <div
@@ -332,37 +405,9 @@ export default function Skills({ isDarkMode = true }: SkillsProps) {
                         <h3 className={`font-semibold text-sm ${isDarkMode ? "text-white" : "text-gray-800"}`}>
                           {skill.name}
                         </h3>
-                        <span
-                          className={`text-xs font-bold px-2 py-1 rounded ${
-                            skill.level >= 90
-                              ? isDarkMode
-                                ? "bg-green-900/30 text-green-400"
-                                : "bg-green-100 text-green-700"
-                              : skill.level >= 75
-                              ? isDarkMode
-                                ? "bg-blue-900/30 text-blue-400"
-                                : "bg-blue-100 text-blue-700"
-                              : isDarkMode
-                              ? "bg-orange-900/30 text-orange-400"
-                              : "bg-orange-100 text-orange-700"
-                          }`}
-                        >
-                          {getLevelLabel(skill.level)}
-                        </span>
                       </div>
                       
                       <div className="mb-2">
-                        <div className="flex items-center justify-between mb-1">
-                          <span className={`text-xs ${isDarkMode ? "text-gray-400" : "text-gray-600"}`}>
-                            Proficiency
-                          </span>
-                          <span
-                            className="text-sm font-semibold"
-                            style={{ color: levelColor }}
-                          >
-                            {animatedLevel}%
-                          </span>
-                        </div>
                         <div className={`h-2.5 rounded-full overflow-hidden ${isDarkMode ? "bg-gray-700" : "bg-gray-200"}`}>
                           <div
                             className="h-full rounded-full transition-all duration-1000 ease-out relative"
