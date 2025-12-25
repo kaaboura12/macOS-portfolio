@@ -19,6 +19,7 @@ const dockApps = [
   { id: "spotify", title: "Spotify", icon: "/spotify.png", component: "Spotify" },
   { id: "projects", title: "Projects", icon: "/projects.svg", component: "Projects" },
   { id: "skills", title: "Skills", icon: "/skills.svg", component: "Skills" },
+  { id: "contact", title: "Contact", icon: "/contact.webp", component: "Contact" },
 ]
 
 interface DockProps {
