@@ -46,8 +46,8 @@ export default function Welcome({ isDarkMode = true, onClose }: WelcomeProps) {
   const borderColor = isDarkMode ? "border-gray-800/50" : "border-gray-200/80"
 
   const roles = [
-    { label: "Frontend Developer", icon: Code2 },
-    { label: "Full-Stack Engineer", icon: Server },
+    { label: "Full Stack Developer", icon: Server },
+    { label: "Web & Mobile Developer", icon: Code2 },
     { label: "Creative Developer", icon: Sparkles },
   ]
 

@@ -168,7 +168,7 @@ export default function Contact({ isDarkMode = true }: ContactProps) {
               <div className="flex-1">
                 <h1 className="text-3xl font-semibold mb-2">{contact.name}</h1>
                 <div className={`text-base ${isDarkMode ? "text-gray-400" : "text-gray-600"}`}>
-                  Frontend Developer & Full-Stack Engineer
+                  Full Stack Developer (Web & Mobile)
                 </div>
               </div>
             </div>
@@ -217,8 +217,8 @@ export default function Contact({ isDarkMode = true }: ContactProps) {
                 Notes
               </h2>
               <div className={`text-sm leading-relaxed ${isDarkMode ? "text-gray-400" : "text-gray-600"}`}>
-                Senior Full Stack Developer specializing in building accessible, performant, and scalable web applications. 
-                Experienced in leading development teams and implementing best practices for modern web development.
+                Full Stack Developer specializing in building accessible, performant, and scalable web and mobile applications. 
+                Experienced in cross-platform development, working with modern frameworks for both web and mobile platforms.
               </div>
             </div>
           </div>

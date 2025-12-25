@@ -223,12 +223,12 @@ export default function Safari({ isDarkMode = true }: SafariProps) {
                 <div className={`p-6 rounded-lg ${cardBg}`}>
                   <h3 className="text-xl font-semibold mb-4">Sayari Amin - Portfolio</h3>
                   <p className="mb-4">
-                    Welcome to my portfolio website! I'm a frontend developer specializing in creating beautiful,
-                    responsive, and user-friendly web applications.
+                    Welcome to my portfolio website! I'm a full stack developer specializing in creating beautiful,
+                    responsive, and user-friendly web and mobile applications.
                   </p>
                   <p className="mb-4">
-                    With expertise in React, Next.js, TypeScript, and modern CSS frameworks, I build performant web
-                    experiences that users love.
+                    With expertise in React, Next.js, TypeScript, Flutter, and modern frameworks, I build performant
+                    experiences across web and mobile platforms that users love.
                   </p>
                   <div className="flex justify-end">
                     <button

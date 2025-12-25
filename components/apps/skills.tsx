@@ -1,7 +1,7 @@
 "use client"
 
 import { useState, useEffect } from "react"
-import { Code, Server, Gamepad2, Settings, TrendingUp, Sparkles, Zap } from "lucide-react"
+import { Code, Server, Smartphone, Settings, TrendingUp, Sparkles, Zap } from "lucide-react"
 
 interface SkillsProps {
   isDarkMode?: boolean
@@ -81,7 +81,7 @@ export default function Skills({ isDarkMode = true }: SkillsProps) {
     {
       id: "mobile",
       name: "Mobile Development",
-      icon: <Gamepad2 className="w-5 h-5" />,
+      icon: <Smartphone className="w-5 h-5" />,
       color: isDarkMode ? "#3B82F6" : "#2563EB", // Blue
       skills: [
         { name: "Flutter", level: 90, category: "mobile" },

@@ -15,7 +15,7 @@ export default function Notes({ isDarkMode = true }: NotesProps) {
       id: 1,
       title: "About Me",
       content: `# Sayari Amin
-Frontend Developer & Full Stack Engineer
+Full Stack Developer (Web & Mobile)
 
 ## Skills
 ### Frontend
@@ -37,15 +37,6 @@ Frontend Developer & Full Stack Engineer
 - NoSQL (MongoDB)
 - RESTful APIs/GraphQL
 
-### Game Development
-- Unity/Unreal Engine
-- C# & C++
-- Game Design Principles
-- Game Mechanics & Systems
-- Blender 3D/3D Modeling
-- Animations for agricultural machinery and vehicles
-- Godot Engine
-
 ### DevOps & Tools
 - Docker/Containerization
 - CI/CD Pipelines
@@ -55,7 +46,7 @@ Frontend Developer & Full Stack Engineer
 - Linux/Unix
 
 ## Experience
-Currently working as a Senior Full Stack Developer, focusing on building accessible, performant, and scalable web applications. Experienced in leading development teams and implementing best practices for modern web development.
+Full Stack Developer with expertise in both web and mobile development. Focused on building accessible, performant, and scalable applications across platforms. Experienced in cross-platform development and implementing best practices for modern web and mobile development.
 
 ## Contact
 Email: sayariemin@gmail.com
@@ -81,10 +72,8 @@ Location: Tunis`,
 - Master Rust for performance-critical applications and systems programming
 - Improve Go proficiency for backend services and microservices
 - Deepen knowledge of AI/ML frameworks and practical applications
-- Make popular games with Unity and Unreal Engine
 
 ## Personal Projects
-- Develop an indie game from concept to release
 - Build AI-powered tools that enhance creative workflows
 - Create open-source libraries that solve real problems
 - Contribute to projects I use and admire
