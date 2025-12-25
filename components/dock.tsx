@@ -16,8 +16,8 @@ const dockApps = [
   { id: "facetime", title: "FaceTime", icon: "/facetime.png", component: "FaceTime" },
   { id: "terminal", title: "Terminal", icon: "/terminal.png", component: "Terminal" },
   { id: "github", title: "GitHub", icon: "/github.png", component: "GitHub" },
-  { id: "youtube", title: "YouTube", icon: "/youtube.png", component: "YouTube" },
   { id: "spotify", title: "Spotify", icon: "/spotify.png", component: "Spotify" },
+  { id: "projects", title: "Projects", icon: "/projects.svg", component: "Projects" },
 ]
 
 interface DockProps {

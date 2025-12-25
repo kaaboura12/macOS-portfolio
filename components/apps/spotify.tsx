@@ -18,6 +18,7 @@ export default function Spotify({ isDarkMode = true }: SpotifyProps) {
   const [isMuted, setIsMuted] = useState(false)
   const [isAudioReady, setIsAudioReady] = useState(false)
   const [error, setError] = useState<string | null>(null)
+  const [hasTriedAutoPlay, setHasTriedAutoPlay] = useState(false)
 
   const audioRef = useRef<HTMLAudioElement>(null)
 
@@ -110,6 +111,28 @@ export default function Spotify({ isDarkMode = true }: SpotifyProps) {
       audio.pause()
     }
   }, [isPlaying, isAudioReady])
+
+  // Auto-play when audio is ready (on first load only)
+  useEffect(() => {
+    if (isAudioReady && !isPlaying && !hasTriedAutoPlay) {
+      // Auto-play on first load when audio is ready
+      const audio = audioRef.current
+      if (audio) {
+        setHasTriedAutoPlay(true)
+        const playPromise = audio.play()
+        if (playPromise !== undefined) {
+          playPromise
+            .then(() => {
+              setIsPlaying(true)
+            })
+            .catch((error) => {
+              // Auto-play was prevented (browser policy), user will need to click play
+              console.log("Auto-play prevented by browser:", error)
+            })
+        }
+      }
+    }
+  }, [isAudioReady, isPlaying, hasTriedAutoPlay])
 
   useEffect(() => {
     const audio = audioRef.current

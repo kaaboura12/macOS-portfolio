@@ -52,7 +52,7 @@ export default function Safari({ isDarkMode = true }: SafariProps) {
     },
     {
       title: "GitHub",
-      url: "https://github.com/daprior",
+      url: "https://github.com/kaaboura12",
       icon: "/github.png",
     },
     {

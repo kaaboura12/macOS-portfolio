@@ -12,10 +12,10 @@ import VSCode from "@/components/apps/vscode"
 import FaceTime from "@/components/apps/facetime"
 import Terminal from "@/components/apps/terminal"
 import Mail from "@/components/apps/mail"
-import YouTube from "@/components/apps/youtube"
 import Spotify from "@/components/apps/spotify"
 import Snake from "@/components/apps/snake"
 import Weather from "@/components/apps/weather"
+import Projects from "@/components/apps/projects"
 
 
 const componentMap: Record<string, React.ComponentType<{ isDarkMode?: boolean }>> = {
@@ -26,10 +26,10 @@ const componentMap: Record<string, React.ComponentType<{ isDarkMode?: boolean }>
   FaceTime,
   Terminal,
   Mail,
-  YouTube,
   Spotify,
   Snake,
   Weather,
+  Projects,
 }
 
 interface WindowProps {

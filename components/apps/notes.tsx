@@ -59,7 +59,7 @@ Currently working as a Senior Full Stack Developer, focusing on building accessi
 
 ## Contact
 Email: mail@danielprior.dk
-GitHub: github.com/daprior
+GitHub: github.com/kaaboura12
 Portfolio: danielprior.dev`,
       date: "Today, 10:30 AM",
     },

@@ -1,0 +1,79 @@
+<svg width="256" height="256" viewBox="0 0 256 256" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- macOS icon rounded corners -->
+  <defs>
+    <clipPath id="iconClip">
+      <rect width="256" height="256" rx="56" ry="56"/>
+    </clipPath>
+    
+    <!-- Main folder gradient - macOS blue -->
+    <linearGradient id="folderGradient" x1="128" y1="0" x2="128" y2="256" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#4A9EFF"/>
+      <stop offset="50%" stop-color="#007AFF"/>
+      <stop offset="100%" stop-color="#0051D5"/>
+    </linearGradient>
+    
+    <!-- Folder highlight -->
+    <linearGradient id="folderHighlight" x1="128" y1="0" x2="128" y2="120" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
+    </linearGradient>
+    
+    <!-- Folder tab gradient -->
+    <linearGradient id="tabGradient" x1="128" y1="60" x2="128" y2="100" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#6BB0FF"/>
+      <stop offset="100%" stop-color="#4A9EFF"/>
+    </linearGradient>
+    
+    <!-- Shadow -->
+    <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="8"/>
+      <feOffset dx="0" dy="4" result="offsetblur"/>
+      <feComponentTransfer>
+        <feFuncA type="linear" slope="0.3"/>
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="256" height="256" rx="56" fill="url(#folderGradient)" clip-path="url(#iconClip)"/>
+  
+  <!-- Folder shadow -->
+  <path d="M64 96C64 88 70 82 78 82H110L118 90H178C186 90 192 96 192 104V200C192 208 186 214 178 214H78C70 214 64 208 64 200V96Z" fill="#000000" fill-opacity="0.2" filter="url(#shadow)"/>
+  
+  <!-- Main folder body -->
+  <path d="M64 96C64 88 70 82 78 82H110L118 90H178C186 90 192 96 192 104V200C192 208 186 214 178 214H78C70 214 64 208 64 200V96Z" fill="url(#folderGradient)"/>
+  
+  <!-- Folder tab -->
+  <path d="M78 82H110L118 90H148C156 90 162 84 162 76V70C162 62 156 56 148 56H78C70 56 64 62 64 70V90C64 82 70 82 78 82Z" fill="url(#tabGradient)"/>
+  
+  <!-- Tab highlight -->
+  <path d="M78 82H110L118 90H148C156 90 162 84 162 76V70C162 62 156 56 148 56H78C70 56 64 62 64 70V90C64 82 70 82 78 82Z" fill="url(#folderHighlight)"/>
+  
+  <!-- Tab edge highlight -->
+  <path d="M148 56H78C70 56 64 62 64 70V76" stroke="#FFFFFF" stroke-opacity="0.4" stroke-width="2" stroke-linecap="round"/>
+  
+  <!-- Folder top edge highlight -->
+  <path d="M64 96H192" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="2"/>
+  
+  <!-- Project documents inside folder -->
+  <g opacity="0.9">
+    <!-- Document 1 -->
+    <rect x="88" y="120" width="48" height="64" rx="3" fill="#FFFFFF" fill-opacity="0.85"/>
+    <rect x="92" y="128" width="40" height="3" rx="1.5" fill="#007AFF" fill-opacity="0.6"/>
+    <rect x="92" y="136" width="36" height="3" rx="1.5" fill="#007AFF" fill-opacity="0.4"/>
+    <rect x="92" y="144" width="32" height="3" rx="1.5" fill="#007AFF" fill-opacity="0.4"/>
+    
+    <!-- Document 2 -->
+    <rect x="120" y="124" width="48" height="64" rx="3" fill="#FFFFFF" fill-opacity="0.7"/>
+    <rect x="124" y="132" width="40" height="3" rx="1.5" fill="#007AFF" fill-opacity="0.5"/>
+    <rect x="124" y="140" width="36" height="3" rx="1.5" fill="#007AFF" fill-opacity="0.4"/>
+    <rect x="124" y="148" width="32" height="3" rx="1.5" fill="#007AFF" fill-opacity="0.4"/>
+  </g>
+  
+  <!-- Folder highlight overlay -->
+  <rect width="256" height="120" fill="url(#folderHighlight)" clip-path="url(#iconClip)"/>
+</svg>

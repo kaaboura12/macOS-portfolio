@@ -41,6 +41,7 @@ export default function Desktop({
   const [showSpotlight, setShowSpotlight] = useState(false)
   const [isDarkMode, setIsDarkMode] = useState(initialDarkMode)
   const [screenBrightness, setScreenBrightness] = useState(initialBrightness)
+  const [showSpotifyModal, setShowSpotifyModal] = useState(false)
   const desktopRef = useRef<HTMLDivElement>(null)
 
   useEffect(() => {
@@ -48,10 +49,32 @@ export default function Desktop({
       setTime(new Date())
     }, 1000)
 
-    // No default app opening to avoid duplicate key issues
-
     return () => clearInterval(timer)
   }, [])
+
+  // Auto-open Spotify as modal on login
+  useEffect(() => {
+    // Calculate centered position for modal (smaller window)
+    const modalWidth = 500
+    const modalHeight = 650
+    const centerX = (typeof window !== 'undefined' ? window.innerWidth : 1920) / 2 - modalWidth / 2
+    const centerY = (typeof window !== 'undefined' ? window.innerHeight : 1080) / 2 - modalHeight / 2
+
+    const spotifyApp: AppWindow = {
+      id: "spotify",
+      title: "Spotify",
+      component: "Spotify",
+      position: { x: centerX, y: centerY },
+      size: { width: modalWidth, height: modalHeight },
+    }
+
+    // Small delay to ensure desktop is fully rendered
+    setTimeout(() => {
+      setOpenWindows([spotifyApp])
+      setActiveWindowId("spotify")
+      setShowSpotifyModal(true)
+    }, 300)
+  }, []) // Empty dependency array means this runs once on mount (every login)
 
   // Update local state when props change
   useEffect(() => {
@@ -65,6 +88,12 @@ export default function Desktop({
   const openApp = (app: AppWindow) => {
     // Check if app is already open
     const isOpen = openWindows.some((window) => window.id === app.id)
+
+    // If manually opening Spotify (not auto-opened), hide modal backdrop
+    // Auto-opened Spotify has size 500x650, manually opened has 800x600
+    if (app.id === "spotify" && !isOpen && app.size.width === 800) {
+      setShowSpotifyModal(false)
+    }
 
     if (!isOpen) {
       setOpenWindows((prev) => [...prev, app])
@@ -88,6 +117,11 @@ export default function Desktop({
       setActiveWindowId(remainingWindows[remainingWindows.length - 1].id)
     } else if (openWindows.length <= 1) {
       setActiveWindowId(null)
+    }
+
+    // Hide modal backdrop if closing Spotify
+    if (id === "spotify") {
+      setShowSpotifyModal(false)
     }
   }
 
@@ -153,7 +187,7 @@ export default function Desktop({
         />
 
         {/* Windows */}
-        <div className="absolute inset-0 pt-6 pb-16">
+        <div className="absolute inset-0 pt-6 pb-16 z-10">
           {openWindows.map((window) => (
             <Window
               key={window.id}
@@ -182,6 +216,20 @@ export default function Desktop({
 
         {/* Spotlight */}
         {showSpotlight && <Spotlight onClose={() => setShowSpotlight(false)} onAppClick={openApp} />}
+
+        {/* Spotify Modal Backdrop */}
+        {showSpotifyModal && openWindows.some((w) => w.id === "spotify") && (
+          <div
+            className="fixed inset-0 bg-black/30 backdrop-blur-sm z-[5] transition-opacity duration-300"
+            onClick={() => {
+              // Close Spotify when clicking backdrop
+              const spotifyWindow = openWindows.find((w) => w.id === "spotify")
+              if (spotifyWindow) {
+                closeWindow("spotify")
+              }
+            }}
+          />
+        )}
 
         <Dock
           onAppClick={openApp}
