@@ -1,0 +1,67 @@
+<svg width="256" height="256" viewBox="0 0 256 256" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- macOS icon rounded corners -->
+  <defs>
+    <clipPath id="iconClip">
+      <rect width="256" height="256" rx="56" ry="56"/>
+    </clipPath>
+    
+    <!-- Main gradient - purple/blue tech theme -->
+    <linearGradient id="mainGradient" x1="128" y1="0" x2="128" y2="256" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#6366F1"/>
+      <stop offset="50%" stop-color="#8B5CF6"/>
+      <stop offset="100%" stop-color="#7C3AED"/>
+    </linearGradient>
+    
+    <!-- Highlight -->
+    <linearGradient id="highlight" x1="128" y1="0" x2="128" y2="140" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
+    </linearGradient>
+    
+    <!-- Shadow -->
+    <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="8"/>
+      <feOffset dx="0" dy="4" result="offsetblur"/>
+      <feComponentTransfer>
+        <feFuncA type="linear" slope="0.3"/>
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="256" height="256" rx="56" fill="url(#mainGradient)" clip-path="url(#iconClip)"/>
+  
+  <!-- Skill bars/chart visualization -->
+  <g opacity="0.9">
+    <!-- Bar 1 -->
+    <rect x="80" y="140" width="96" height="12" rx="6" fill="#FFFFFF" fill-opacity="0.3" filter="url(#shadow)"/>
+    <rect x="80" y="140" width="88" height="12" rx="6" fill="#FFFFFF" fill-opacity="0.9"/>
+    
+    <!-- Bar 2 -->
+    <rect x="80" y="160" width="96" height="12" rx="6" fill="#FFFFFF" fill-opacity="0.3" filter="url(#shadow)"/>
+    <rect x="80" y="160" width="82" height="12" rx="6" fill="#FFFFFF" fill-opacity="0.9"/>
+    
+    <!-- Bar 3 -->
+    <rect x="80" y="180" width="96" height="12" rx="6" fill="#FFFFFF" fill-opacity="0.3" filter="url(#shadow)"/>
+    <rect x="80" y="180" width="76" height="12" rx="6" fill="#FFFFFF" fill-opacity="0.9"/>
+    
+    <!-- Bar 4 -->
+    <rect x="80" y="200" width="96" height="12" rx="6" fill="#FFFFFF" fill-opacity="0.3" filter="url(#shadow)"/>
+    <rect x="80" y="200" width="70" height="12" rx="6" fill="#FFFFFF" fill-opacity="0.9"/>
+  </g>
+  
+  <!-- Center icon - sparkles/star representing skills -->
+  <g opacity="0.95">
+    <circle cx="128" cy="100" r="24" fill="#FFFFFF" fill-opacity="0.2"/>
+    <path d="M128 76L132 92L148 96L132 100L128 116L124 100L108 96L124 92L128 76Z" fill="#FFFFFF" fill-opacity="0.9"/>
+    <circle cx="128" cy="100" r="4" fill="#FFFFFF"/>
+  </g>
+  
+  <!-- Highlight overlay -->
+  <rect width="256" height="140" fill="url(#highlight)" clip-path="url(#iconClip)"/>
+</svg>
+

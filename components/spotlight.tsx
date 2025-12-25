@@ -15,6 +15,7 @@ const spotlightApps = [
   { id: "snake", title: "Snake", icon: "/snake.png", component: "Snake" },
   { id: "weather", title: "Weather", icon: "/weather.png", component: "Weather" },
   { id: "projects", title: "Projects", icon: "/projects.svg", component: "Projects" },
+  { id: "skills", title: "Skills", icon: "/skills.svg", component: "Skills" },
 ]
 
 interface SpotlightProps {
