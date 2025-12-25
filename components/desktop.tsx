@@ -52,27 +52,26 @@ export default function Desktop({
     return () => clearInterval(timer)
   }, [])
 
-  // Auto-open Spotify as modal on login
+  // Auto-open Welcome app on login
   useEffect(() => {
-    // Calculate centered position for modal (smaller window)
-    const modalWidth = 500
-    const modalHeight = 650
-    const centerX = (typeof window !== 'undefined' ? window.innerWidth : 1920) / 2 - modalWidth / 2
-    const centerY = (typeof window !== 'undefined' ? window.innerHeight : 1080) / 2 - modalHeight / 2
+    // Calculate centered position for welcome window
+    const welcomeWidth = 900
+    const welcomeHeight = 550
+    const centerX = (typeof window !== 'undefined' ? window.innerWidth : 1920) / 2 - welcomeWidth / 2
+    const centerY = (typeof window !== 'undefined' ? window.innerHeight : 1080) / 2 - welcomeHeight / 2
 
-    const spotifyApp: AppWindow = {
-      id: "spotify",
-      title: "Spotify",
-      component: "Spotify",
+    const welcomeApp: AppWindow = {
+      id: "welcome",
+      title: "Welcome",
+      component: "Welcome",
       position: { x: centerX, y: centerY },
-      size: { width: modalWidth, height: modalHeight },
+      size: { width: welcomeWidth, height: welcomeHeight },
     }
 
     // Small delay to ensure desktop is fully rendered
     setTimeout(() => {
-      setOpenWindows([spotifyApp])
-      setActiveWindowId("spotify")
-      setShowSpotifyModal(true)
+      setOpenWindows([welcomeApp])
+      setActiveWindowId("welcome")
     }, 300)
   }, []) // Empty dependency array means this runs once on mount (every login)
 
