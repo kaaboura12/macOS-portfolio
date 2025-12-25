@@ -207,10 +207,12 @@ export default function Terminal({ isDarkMode = true }: TerminalProps) {
           "│ Contact │",
           "└─────────┘",
           "",
-          "Email: mail@sayariamin.dev",
+          "Email: sayariemin@gmail.com",
           "GitHub: github.com/kaaboura12",
-          "LinkedIn: linkedin.com/in/sayari-amin/",
-          "Website: sayariamin.dev",
+          "LinkedIn: linkedin.com/in/sayari-amin-55243a373",
+          "Instagram: instagram.com/sayari_emin/",
+          "Facebook: facebook.com/amin.sayari.355",
+          "Location: Tunis",
           "",
         ])
         break

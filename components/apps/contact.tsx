@@ -22,12 +22,12 @@ export default function Contact({ isDarkMode = true }: ContactProps) {
     name: "Sayari Amin",
     firstName: "Sayari",
     lastName: "Amin",
-    email: "mail@sayariamin.dev",
+    email: "sayariemin@gmail.com",
     website: "sayariamin.dev",
     github: "github.com/kaaboura12",
-    linkedin: "linkedin.com/in/sayari-amin/",
-    location: "Denmark",
-    phone: "+45 XX XX XX XX", // You can update this with your actual phone
+    linkedin: "linkedin.com/in/sayari-amin-55243a373",
+    location: "Tunis",
+    phone: "+216 XX XX XX XX", // You can update this with your actual phone
   }
 
   const contactInfo = [

@@ -47,7 +47,7 @@ export default function Safari({ isDarkMode = true }: SafariProps) {
   const socialLinks = [
     {
       title: "LinkedIn",
-      url: "https://www.linkedin.com/in/sayari-amin/",
+      url: "https://www.linkedin.com/in/sayari-amin-55243a373",
       icon: "/linkedin.png",
     },
     {
@@ -56,13 +56,18 @@ export default function Safari({ isDarkMode = true }: SafariProps) {
       icon: "/github.png",
     },
     {
-      title: "YouTube",
-      url: "https://www.youtube.com/@SayariAmin0",
-      icon: "/youtube.png",
+      title: "Instagram",
+      url: "https://www.instagram.com/sayari_emin/",
+      icon: "/placeholder.svg",
+    },
+    {
+      title: "Facebook",
+      url: "https://www.facebook.com/amin.sayari.355",
+      icon: "/placeholder.svg",
     },
     {
       title: "Email",
-      url: "mailto:mail@sayariamin.dev",
+      url: "mailto:sayariemin@gmail.com",
       icon: "/mail.png",
     },
   ]

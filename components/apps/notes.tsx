@@ -58,9 +58,12 @@ Frontend Developer & Full Stack Engineer
 Currently working as a Senior Full Stack Developer, focusing on building accessible, performant, and scalable web applications. Experienced in leading development teams and implementing best practices for modern web development.
 
 ## Contact
-Email: mail@sayariamin.dev
+Email: sayariemin@gmail.com
 GitHub: github.com/kaaboura12
-Portfolio: sayariamin.dev`,
+LinkedIn: linkedin.com/in/sayari-amin-55243a373
+Instagram: instagram.com/sayari_emin/
+Facebook: facebook.com/amin.sayari.355
+Location: Tunis`,
       date: "Today, 10:30 AM",
     },
     {

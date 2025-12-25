@@ -13,7 +13,7 @@ export default function MailApp({ isDarkMode = true }: MailProps) {
 
   // Open mailto link when the app is opened
   useEffect(() => {
-    const mailtoLink = "mailto:mail@sayariamin.dev"
+    const mailtoLink = "mailto:sayariemin@gmail.com"
     window.location.href = mailtoLink
   }, [])
 

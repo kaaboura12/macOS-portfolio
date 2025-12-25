@@ -110,7 +110,7 @@ Contributions, issues, and feature requests are welcome! Feel free to check the 
 
 ## 📧 Contact
 
-Sayari Amin - [mail@sayariamin.dev](mailto:mail@sayariamin.dev)
+Sayari Amin - [sayariemin@gmail.com](mailto:sayariemin@gmail.com)
 
 Project Link: [https://github.com/kaaboura12/sayariamin-macos](https://github.com/kaaboura12/sayariamin-macos)
 
