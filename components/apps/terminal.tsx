@@ -92,7 +92,7 @@ export default function Terminal({ isDarkMode = true }: TerminalProps) {
     const mainCommand = args[0]
 
     // Add command to history
-    setHistory((prev) => [...prev, `daniel@macbook-pro ~ $ ${cmd}`, ""])
+    setHistory((prev) => [...prev, `sayari@macbook-pro ~ $ ${cmd}`, ""])
 
     // Process command
     switch (mainCommand) {
@@ -131,14 +131,14 @@ export default function Terminal({ isDarkMode = true }: TerminalProps) {
         break
 
       case "whoami":
-        setHistory((prev) => [...prev, "daniel", ""])
+        setHistory((prev) => [...prev, "sayari", ""])
         break
 
       case "about":
         setHistory((prev) => [
           ...prev,
           "┌─────────────────────────────────────┐",
-          "│ Daniel Prior                        │",
+          "│ Sayari Amin                         │",
           "│ Frontend Developer & UI/UX Designer │",
           "└─────────────────────────────────────┘",
           "",
@@ -207,10 +207,10 @@ export default function Terminal({ isDarkMode = true }: TerminalProps) {
           "│ Contact │",
           "└─────────┘",
           "",
-          "Email: mail@danielprior.dk",
+          "Email: mail@sayariamin.dev",
           "GitHub: github.com/kaaboura12",
-          "LinkedIn: linkedin.com/in/daniel-prior-53a679195/",
-          "Website: danielprior.dev",
+          "LinkedIn: linkedin.com/in/sayari-amin/",
+          "Website: sayariamin.dev",
           "",
         ])
         break
@@ -234,7 +234,7 @@ export default function Terminal({ isDarkMode = true }: TerminalProps) {
       ))}
 
       <div className="flex">
-        <span className="mr-2">daniel@macbook-pro ~ $</span>
+        <span className="mr-2">sayari@macbook-pro ~ $</span>
         <input
           ref={inputRef}
           type="text"

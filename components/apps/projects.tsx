@@ -150,8 +150,8 @@ export default function Projects({ isDarkMode = true }: ProjectsProps) {
         "JavaScript",
         "UI/UX Design"
       ],
-      githubUrl: "https://github.com/daprior/danielprior-macos",
-      liveUrl: "http://danielprior.dev",
+      githubUrl: "https://github.com/kaaboura12/sayariamin-macos",
+      liveUrl: "http://sayariamin.dev",
       image: "",
       category: "web",
       featured: true,

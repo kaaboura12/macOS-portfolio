@@ -14,7 +14,7 @@ export default function Notes({ isDarkMode = true }: NotesProps) {
     {
       id: 1,
       title: "About Me",
-      content: `# Daniel Prior
+      content: `# Sayari Amin
 Frontend Developer & Full Stack Engineer
 
 ## Skills
@@ -58,9 +58,9 @@ Frontend Developer & Full Stack Engineer
 Currently working as a Senior Full Stack Developer, focusing on building accessible, performant, and scalable web applications. Experienced in leading development teams and implementing best practices for modern web development.
 
 ## Contact
-Email: mail@danielprior.dk
+Email: mail@sayariamin.dev
 GitHub: github.com/kaaboura12
-Portfolio: danielprior.dev`,
+Portfolio: sayariamin.dev`,
       date: "Today, 10:30 AM",
     },
     {

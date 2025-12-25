@@ -22,10 +22,10 @@ export default function Contact({ isDarkMode = true }: ContactProps) {
     name: "Sayari Amin",
     firstName: "Sayari",
     lastName: "Amin",
-    email: "mail@danielprior.dk",
-    website: "danielprior.dev",
+    email: "mail@sayariamin.dev",
+    website: "sayariamin.dev",
     github: "github.com/kaaboura12",
-    linkedin: "linkedin.com/in/daniel-prior-53a679195/",
+    linkedin: "linkedin.com/in/sayari-amin/",
     location: "Denmark",
     phone: "+45 XX XX XX XX", // You can update this with your actual phone
   }

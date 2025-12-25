@@ -10,7 +10,7 @@ A stunning, interactive macOS-inspired portfolio website built with Next.js and 
 
 ## 👨‍💻 Demo
 
-Demo Link: [http://danielprior.dev](http://danielprior.dev)
+Demo Link: [http://sayariamin.dev](http://sayariamin.dev)
 
 ### ✨ Features
 
@@ -46,7 +46,7 @@ Demo Link: [http://danielprior.dev](http://danielprior.dev)
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/daprior/danielprior-macos.git
+git clone https://github.com/kaaboura12/sayariamin-macos.git
 cd macos-portfolio
 
 2. Install 
@@ -106,14 +106,14 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 🤝 Contributing
 
-Contributions, issues, and feature requests are welcome! Feel free to check the [issues page](https://github.com/daprior/danielprior-macos/issues).
+Contributions, issues, and feature requests are welcome! Feel free to check the [issues page](https://github.com/kaaboura12/sayariamin-macos/issues).
 
 ## 📧 Contact
 
-Daniel Prior - [mail@danielprior.dk](mailto:mail@danielprior.dk)
+Sayari Amin - [mail@sayariamin.dev](mailto:mail@sayariamin.dev)
 
-Project Link: [https://github.com/daprior/danielprior-macos](https://github.com/daprior/danielprior-macos)
+Project Link: [https://github.com/kaaboura12/sayariamin-macos](https://github.com/kaaboura12/sayariamin-macos)
 
 ---
 
-<p align="center"><sub>Made with ❤️ by Daniel</sub></p>
+<p align="center"><sub>Made with ❤️ by Sayari</sub></p>
